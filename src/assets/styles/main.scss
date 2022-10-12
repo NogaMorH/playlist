@@ -10,8 +10,10 @@
 @import "basics/base";
 
 // Pages
-@import "pages/home";
-@import "pages/login-signup";
+@import "pages/player";
 
 // Cmps
 @import "cmps/app-header";
+@import "cmps/video-list";
+@import "cmps/video-preview";
+@import "cmps/video-search";

@@ -1,9 +1,9 @@
-import { Home } from './pages/home.jsx'
+import { Player } from './pages/player.jsx'
 
 const routes = [
     {
         path: '/',
-        component: <Home />,
+        component: <Player />,
     }
 ]
 
