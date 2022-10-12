@@ -1,8 +1,12 @@
 import { storageService } from "./async-storage.service"
+import axios from "axios"
 
-export const toyService = {
-    query,
+
+
+export const videoService = {
+    // query,
     getById,
+    getSongs
 }
 
 const STORAGE_KEY = 'toys'
@@ -25,8 +29,8 @@ function getById(toyId) {
 
 
 
-function getSongs(term) {
+async function getSongs(term) {
     const API_KEY = 'AIzaSyBL-4tgjB8MxfYouEBcUPllZk2u8noV9kM'
-    return axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&videoEmbeddable=true&type=video&key=${API_KEY}&q=${term}&maxResults=50`)
+    return await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&videoEmbeddable=true&type=video&key=${API_KEY}&q=${term}&maxResults=25`)
 
 }

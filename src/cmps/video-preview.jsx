@@ -1,7 +1,11 @@
-export const VideoPreview = () => {
+export const VideoPreview = ({id,key,description,title,img}) => {
     return (
-        <header>
-            <h1>hello from video preview</h1>
-        </header>
+        <li>
+            <button>
+           <img src={img} />
+           <h3>{title}</h3> 
+           <div>{description}</div> 
+            </button>
+        </li>
     )
 }
