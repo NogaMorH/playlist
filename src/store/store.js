@@ -1,10 +1,10 @@
 import { legacy_createStore as createStore, applyMiddleware, combineReducers, compose } from 'redux'
 import thunk from 'redux-thunk'
 
-import { boardReducer } from './board/board.reducer.js'
+import { videoReducer } from './video/video.reducer'
 
 const rootReducer = combineReducers({
-    boardModule: boardReducer,
+    videoModule: videoReducer,
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

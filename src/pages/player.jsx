@@ -6,16 +6,16 @@ import { videoService } from "../services/video.service"
 
 
 export const Player = () => {
-    const searchVideos = async (term) => {
+    const searchVideos = async (term = 'beatles') => {
         const result = await videoService.getSongs(term)
         return result.data.items
-      }
+    }
 
 
     return (
         <div>
             <VideoSearch />
-            <VideoList searchVideos={searchVideos}/>
+            <VideoList searchVideos={searchVideos} />
             <VideoPlayer />
             <h1>hello from home</h1>
         </div>
