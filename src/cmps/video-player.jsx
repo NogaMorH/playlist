@@ -1,7 +1,8 @@
+
+
 export const VideoPlayer = () => {
-    return (
-        <header>
-            <h1>hello from video player</h1>
-        </header>
-    )
+   return(
+   <iframe width="420" height="345" src={`https://www.youtube.com/embed/${id}`}>
+    </iframe>
+   )
 }

@@ -1,4 +1,4 @@
-export const VideoPreview = ({id,key,description,title,img}) => {
+export const VideoPreview = ({id,description,title,img}) => {
     return (
         <li>
             <button>
